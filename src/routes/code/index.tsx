@@ -1,13 +1,13 @@
 import { FunctionalComponent, h } from "preact";
 import "../../style/style.scss";
 
-const Home: FunctionalComponent = () => {
+const Code: FunctionalComponent = () => {
     return (
         <main>
             <section className="hero is-medium">
                 <div className="hero-body">
                     <div className="container">
-                        <p>Home</p>
+                        <p>Code</p>
                     </div>
                 </div>
             </section>
@@ -23,4 +23,4 @@ const Home: FunctionalComponent = () => {
     );
 };
 
-export default Home;
+export default Code;
