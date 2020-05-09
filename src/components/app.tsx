@@ -7,6 +7,7 @@ import Code from "../routes/code";
 import Home from "../routes/home";
 import Profile from "../routes/profile";
 import NotFoundPage from "../routes/notfound";
+import Footer from "./footer";
 import Header from "./header";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -30,6 +31,7 @@ const App: FunctionalComponent = () => {
                 <Route path="/about" component={About} />
                 <NotFoundPage default />
             </Router>
+            <Footer />
         </div>
     );
 };
