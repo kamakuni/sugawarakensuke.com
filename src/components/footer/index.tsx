@@ -3,10 +3,6 @@ import { Link } from "preact-router/match";
 import "../../style/style.scss";
 
 const Footer: FunctionalComponent = () => {
-    const toggleNav = () => {
-        console.log("clicked");
-    };
-
     return (
         <footer className="footer">
             <div className="container">

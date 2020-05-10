@@ -8,24 +8,25 @@ const Header: FunctionalComponent = () => {
     };
 
     return (
-        <header className="navbar has-shadow is-spaced is-fixed-top">
+        <header className="navbar has-shadow is-fixed-top">
             <div className="container">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="/">
-                        <figure className="image is-64x64 is-square is-hidden-touch"></figure>
+                        <div></div>
                     </a>
                 </div>
-                <div className="navbar-left">
-                    <span className="navbar-burger burger" onClick={toggleNav}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                </div>
-                <div className="navbar-right navbar-menu" id="navbar-menu">
-                    <Link className="navbar-item" href="/">Home</Link>
-                    <Link className="navbar-item" href="/code">Code</Link>
-                    <Link className="navbar-item" href="/about">About</Link>
+
+                <a className="navbar-burger burger" onClick={toggleNav}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <div className="navbar-menu" id="navbar-menu">
+                    <div className="navbar-end">
+                        <Link className="navbar-item" href="/">Home</Link>
+                        <Link className="navbar-item" href="/code">Code</Link>
+                        <Link className="navbar-item" href="/about">About</Link>
+                    </div>
                 </div>
             </div>
         </header>
