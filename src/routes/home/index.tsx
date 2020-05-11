@@ -7,7 +7,7 @@ const Home: FunctionalComponent = () => {
             <section className="hero is-medium">
                 <div className="hero-body">
                     <div className="container">
-                        <p>Home</p>
+                        <p>I'm Kensuke.</p>
                     </div>
                 </div>
             </section>

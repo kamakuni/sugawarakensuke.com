@@ -4,15 +4,14 @@ import { Link } from "preact-router/match";
 import "../../style/style.scss";
 
 const Header: FunctionalComponent = () => {
-    const [burgerActive, setBurgerActive] = useState(false);
+    const [isActive, setIsActive] = useState(false);
 
     const toggleNav = () => {
-        setBurgerActive(!burgerActive);
-        console.log("clicked");
+        setIsActive(!isActive);
     };
 
     return (
-        <header className="navbar has-shadow is-fixed-top">
+        <header className="navbar is-fixed-top">
             <div className="container">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="/">
@@ -20,7 +19,7 @@ const Header: FunctionalComponent = () => {
                     </a>
                     <a
                         className={
-                            "navbar-burger burger " +(burgerActive ? "is-active" : "")
+                            "navbar-burger burger " +(isActive ? "is-active" : "")
                         }
                         onClick={toggleNav}
                     >
@@ -30,11 +29,29 @@ const Header: FunctionalComponent = () => {
                     </a>
                 </div>
 
-                <div className="navbar-menu" id="navbar-menu">
+                <div className={"navbar-menu " + (isActive ? "is-active" : "")}>
                     <div className="navbar-end">
-                        <Link className="navbar-item" href="/">Home</Link>
-                        <Link className="navbar-item" href="/code">Code</Link>
-                        <Link className="navbar-item" href="/about">About</Link>
+                        <Link
+                            className="navbar-item"
+                            href="/"
+                            onClick={toggleNav}
+                        >
+                            Home
+                        </Link>
+                        <Link
+                            className="navbar-item"
+                            href="/code"
+                            onClick={toggleNav}
+                        >
+                            Code
+                        </Link>
+                        <Link
+                            className="navbar-item"
+                            href="/about"
+                            onClick={toggleNav}
+                        >
+                            About
+                        </Link>
                     </div>
                 </div>
             </div>
