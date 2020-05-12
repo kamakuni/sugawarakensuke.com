@@ -14,7 +14,7 @@ const Home: FunctionalComponent = () => {
             <section className="section tiles">
                 <div className="container">
                     <div className="columns">
-                        <div className="column">Content1</div>
+                        <div className="column"></div>
                         <div className="column">Content2</div>
                     </div>
                 </div>
