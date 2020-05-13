@@ -1,5 +1,6 @@
 import { FunctionalComponent, h } from "preact";
 import "../../style/style.scss";
+import AsyncImage from "../../components/asyncimage";
 
 const Home: FunctionalComponent = () => {
     return (
@@ -14,7 +15,9 @@ const Home: FunctionalComponent = () => {
             <section className="section tiles">
                 <div className="container">
                     <div className="columns">
-                        <div className="column"></div>
+                        <div className="column">
+                            <AsyncImage />
+                        </div>
                         <div className="column">Content2</div>
                     </div>
                 </div>

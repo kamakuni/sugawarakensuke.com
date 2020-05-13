@@ -8,11 +8,22 @@ const AsyncImage: FunctionalComponent = () => {
 
     useEffect(() => {
         if (!loaded) {
-
+            const img = new Image();
+            img.onload = () => {
+                setLoaded(true);
+            };
+            img.onerror = e => {
+                console.log(e);
+            };
+            img.src = "/assets/img/home.jpg";
         }
     });
 
-    return <img></img>;
+    return (
+        <figure>
+            {loaded ? <img src="/assets/img/home.jpg" /> : <div>loading</div>}
+        </figure>
+    );
 };
 
-export default LazyImage;
+export default AsyncImage;
