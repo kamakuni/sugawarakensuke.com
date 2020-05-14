@@ -3,7 +3,11 @@ import { useState, useEffect } from "preact/hooks";
 import { Link } from "preact-router/match";
 import "../../style/style.scss";
 
-const AsyncImage: FunctionalComponent = () => {
+interface AsyncImageProps {
+    src: string;
+}
+
+const AsyncImage: FunctionalComponent<AsyncImageProps> = props => {
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
@@ -15,14 +19,12 @@ const AsyncImage: FunctionalComponent = () => {
             img.onerror = e => {
                 console.log(e);
             };
-            img.src = "/assets/img/home.jpg";
+            img.src = props.src;
         }
     });
 
     return (
-        <figure>
-            {loaded ? <img src="/assets/img/home.jpg" /> : <div>loading</div>}
-        </figure>
+        <figure>{loaded ? <img src={props.src} /> : <div>loading</div>}</figure>
     );
 };
 

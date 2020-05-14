@@ -12,11 +12,16 @@ const Home: FunctionalComponent = () => {
                     </div>
                 </div>
             </section>
+            <section className="section">
+                <div className="container">
+                    <AsyncImage src="/assets/img/home.jpg" />
+                </div>
+            </section>
             <section className="section tiles">
                 <div className="container">
                     <div className="columns">
                         <div className="column">
-                            <AsyncImage />
+                            <AsyncImage src="/assets/img/home.jpg" />
                         </div>
                         <div className="column">Content2</div>
                     </div>
