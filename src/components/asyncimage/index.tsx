@@ -24,7 +24,9 @@ const AsyncImage: FunctionalComponent<AsyncImageProps> = props => {
     });
 
     return (
-        <figure>{loaded ? <img src={props.src} /> : <div>loading</div>}</figure>
+        <figure className="image is-3by2">
+            {loaded ? <img src={props.src} /> : <div>loading</div>}
+        </figure>
     );
 };
 
