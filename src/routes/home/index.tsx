@@ -7,15 +7,13 @@ const Home: FunctionalComponent = () => {
         <main>
             <section className="hero is-medium">
                 <div className="hero-body">
+                    <p>SUGAWARA KENSUKE</p>
+                </div>
+            </section>
+            <section className="hero is-medium">
+                <div className="hero-body is-paddingless">
                     <div className="container">
-                        <div className="columns">
-                            <div className="column">
-                                <p>I'm Kensuke.</p>
-                            </div>
-                            <div className="column">
-                                <AsyncImage src="/assets/img/home.jpg" />
-                            </div>
-                        </div>
+                        <AsyncImage src="/assets/img/home.jpg" />
                     </div>
                 </div>
             </section>
