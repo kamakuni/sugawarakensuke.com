@@ -1,2 +1,10 @@
 @charset "utf-8";
 @import "~bulma/bulma";
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Yu Mincho Demibold', 'YuMincho', 'Helvetica Neue', arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

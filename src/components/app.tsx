@@ -5,7 +5,6 @@ import "../style/style.scss";
 import About from "../routes/about";
 import Code from "../routes/code";
 import Home from "../routes/home";
-import Profile from "../routes/profile";
 import NotFoundPage from "../routes/notfound";
 import Footer from "./footer";
 import Header from "./header";
