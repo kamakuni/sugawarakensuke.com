@@ -22,7 +22,7 @@ const App: FunctionalComponent = () => {
     };
 
     return (
-        <div id="app">
+        <div className="has-background-white" id="app">
             <Header />
             <Router onChange={handleRoute}>
                 <Route path="/" component={Home} />
