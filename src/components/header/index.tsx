@@ -11,11 +11,16 @@ const Header: FunctionalComponent = () => {
     };
 
     return (
-        <header className="navbar is-fixed-top" style="font-family: '游明朝', YuMincho, 'Hiragino Mincho ProN W3', 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;">
+        <header className="navbar is-fixed-top">
             <div className="container">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="/">
-                        <p>菅原健佑の世界</p>
+                        <figure class="image is-32x32">
+                            <img
+                                class="is-rounded"
+                                src="/assets/img/face.jpg"
+                            />
+                        </figure>
                     </a>
                     <a
                         className={
