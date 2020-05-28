@@ -14,8 +14,8 @@ const Header: FunctionalComponent = () => {
         <header className="navbar is-fixed-top">
             <div className="container">
                 <div className="navbar-brand">
-                    <a className="navbar-item is-marginless" href="/">
-                        <figure class="image is-24x24">
+                    <a className="navbar-item" href="/">
+                        <figure class="image is-32x32">
                             <img
                                 class="is-rounded"
                                 src="/assets/img/face.jpg"
