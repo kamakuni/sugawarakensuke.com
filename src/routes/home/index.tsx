@@ -6,7 +6,7 @@ const Home: FunctionalComponent = () => {
     return (
         <Fragment>
             <section className="section has-text-centered">
-                <p>菅原健佑のWEBサイトです。</p>
+                <p className="is-size-4">菅原健佑のWEBサイト</p>
             </section>
             <section className="hero">
                 <div className="hero-body is-paddingless">
