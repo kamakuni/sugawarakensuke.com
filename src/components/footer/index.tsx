@@ -6,9 +6,7 @@ const Footer: FunctionalComponent = () => {
     return (
         <footer className="footer">
             <div className="container">
-                <div class="content has-text-centered">
-                    <p>Footer</p>
-                </div>
+                <div class="content has-text-centered"></div>
             </div>
         </footer>
     );
