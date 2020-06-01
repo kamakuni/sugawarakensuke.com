@@ -3,7 +3,7 @@ import "../../style/style.scss";
 import { AsyncImage } from "../../components/asyncimage";
 import { Title } from "../../components/title";
 
-export const Home: FunctionalComponent = () => {
+const Home: FunctionalComponent = () => {
     return (
         <Fragment>
             <Title title="菅原健佑のWEBサイト"></Title>
@@ -15,3 +15,5 @@ export const Home: FunctionalComponent = () => {
         </Fragment>
     );
 };
+
+export default Home;

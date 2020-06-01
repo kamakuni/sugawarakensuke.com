@@ -2,7 +2,7 @@ import { FunctionalComponent, h } from "preact";
 import "../../style/style.scss";
 import { Title } from "../../components/title";
 
-export const Code: FunctionalComponent = () => {
+const Code: FunctionalComponent = () => {
     return (
         <main>
             <Title title="Code"></Title>
@@ -17,3 +17,5 @@ export const Code: FunctionalComponent = () => {
         </main>
     );
 };
+
+export default Code;

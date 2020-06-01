@@ -17,3 +17,5 @@ export const About: FunctionalComponent = () => {
         </main>
     );
 };
+
+export default About;

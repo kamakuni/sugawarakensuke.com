@@ -3,9 +3,9 @@ import { Route, Router, RouterOnChangeArgs } from "preact-router";
 import "../style/style.scss";
 import NotFoundPage from "../routes/notfound";
 import { Header } from "./header";
-import { Home } from "../routes/home";
-import { Code } from "../routes/code";
-import { About } from "../routes/about";
+import Home from "../routes/home";
+import Code from "../routes/code";
+import About from "../routes/about";
 import { Footer } from "./footer";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
