@@ -1,13 +1,12 @@
 import { FunctionalComponent, h } from "preact";
 import { Route, Router, RouterOnChangeArgs } from "preact-router";
 import "../style/style.scss";
-
-import About from "../routes/about";
-import Code from "../routes/code";
-import Home from "../routes/home";
 import NotFoundPage from "../routes/notfound";
-import Footer from "./footer";
-import Header from "./header";
+import { Header } from "./header";
+import { Home } from "../routes/home";
+import { Code } from "../routes/code";
+import { About } from "../routes/about";
+import { Footer } from "./footer";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 if ((module as any).hot) {

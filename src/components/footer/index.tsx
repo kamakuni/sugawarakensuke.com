@@ -2,7 +2,7 @@ import { FunctionalComponent, h } from "preact";
 import { Link } from "preact-router/match";
 import "../../style/style.scss";
 
-const Footer: FunctionalComponent = () => {
+export const Footer: FunctionalComponent = () => {
     return (
         <footer className="footer">
             <div className="container">
@@ -11,5 +11,3 @@ const Footer: FunctionalComponent = () => {
         </footer>
     );
 };
-
-export default Footer;

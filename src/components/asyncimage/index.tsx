@@ -7,7 +7,7 @@ interface AsyncImageProps {
     src: string;
 }
 
-const AsyncImage: FunctionalComponent<AsyncImageProps> = props => {
+export const AsyncImage: FunctionalComponent<AsyncImageProps> = props => {
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
@@ -29,5 +29,3 @@ const AsyncImage: FunctionalComponent<AsyncImageProps> = props => {
         </figure>
     );
 };
-
-export default AsyncImage;

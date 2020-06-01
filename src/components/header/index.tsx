@@ -3,7 +3,7 @@ import { useState } from "preact/hooks";
 import { Link } from "preact-router/match";
 import "../../style/style.scss";
 
-const Header: FunctionalComponent = () => {
+export const Header: FunctionalComponent = () => {
     const [isActive, setIsActive] = useState(false);
 
     const toggleNav = () => {
@@ -63,5 +63,3 @@ const Header: FunctionalComponent = () => {
         </header>
     );
 };
-
-export default Header;
