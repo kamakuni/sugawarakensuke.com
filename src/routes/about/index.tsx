@@ -1,16 +1,11 @@
 import { FunctionalComponent, h } from "preact";
 import "../../style/style.scss";
+import { Title } from "../../components/title";
 
 const About: FunctionalComponent = () => {
     return (
         <main>
-            <section className="hero is-medium">
-                <div className="hero-body">
-                    <div className="container">
-                        <p>About</p>
-                    </div>
-                </div>
-            </section>
+            <Title title="About"></Title>
             <section className="section tiles">
                 <div className="container">
                     <div className="columns">
