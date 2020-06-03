@@ -2,6 +2,25 @@ import { FunctionalComponent, h, Fragment } from "preact";
 import "../../style/style.scss";
 import { Title } from "../../components/title";
 
+interface ContentProps {
+    title: string;
+    body: string;
+    link: string;
+}
+
+const Content: FunctionalComponent<ContentProps> = props => {
+    return (
+        <div class="container">
+            <a className="title is-size-4" href={props.link}>
+                {props.title}
+            </a>
+            <div className="content">
+                <p>{props.body}</p>
+            </div>
+        </div>
+    );
+};
+
 const Code: FunctionalComponent = () => {
     return (
         <Fragment>
@@ -10,18 +29,18 @@ const Code: FunctionalComponent = () => {
                 <div className="container">
                     <div className="columns">
                         <div className="column">
-                            <div class="container">
-                                <h4 className="title is-size-4">CHIP-8 Emulator</h4>
-                                <div className="contednt">
-                                    Virtual machine written in Golang
-                                </div>
-                            </div>
+                            <Content
+                                title="CHIP-8 Emulator"
+                                link="https://github.com/kamakuni/chip8"
+                                body="Virtual machine written in Golang"
+                            />
                         </div>
                         <div className="column">
-                            <h4 className="title is-size-4">kmcc</h4>
-                            <div className="contednt">
-                                C language subsets compiler
-                            </div>
+                            <Content
+                                title="kmcc"
+                                link="https://github.com/kamakuni/kmcc"
+                                body="C language subsets compiler"
+                            />
                         </div>
                     </div>
                 </div>
