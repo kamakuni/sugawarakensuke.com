@@ -1,5 +1,4 @@
 import { FunctionalComponent, h } from "preact";
-import { Link } from "preact-router/match";
 import "../../style/style.scss";
 
 export const Footer: FunctionalComponent = () => {

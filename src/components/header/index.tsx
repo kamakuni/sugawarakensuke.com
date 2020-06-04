@@ -11,7 +11,7 @@ export const Header: FunctionalComponent = () => {
     };
 
     return (
-        <header className="navbar is-fixed-top">
+        <header className="navbar is-fixed-top is-transparent">
             <div className="container">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="/">
