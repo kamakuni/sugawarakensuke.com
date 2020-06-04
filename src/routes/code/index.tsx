@@ -11,8 +11,8 @@ interface ContentProps {
 const Content: FunctionalComponent<ContentProps> = props => {
     return (
         <div class="container">
-            <a className="title is-size-4" href={props.link}>
-                {props.title}
+            <a className="title is-4 is-spaced" href={props.link}>
+                <h4>{props.title}</h4>
             </a>
             <div className="content">
                 <p>{props.body}</p>
