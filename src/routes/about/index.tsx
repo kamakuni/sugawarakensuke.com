@@ -7,12 +7,10 @@ export const About: FunctionalComponent = () => {
         <main>
             <Title title="About"></Title>
             <section className="section tiles">
-                <div className="container">
-                    <div className="columns">
-                        <div className="column">Content1</div>
-                        <div className="column">Content2</div>
-                    </div>
-                </div>
+                <figure class="image container is-128x128">
+                    <img class="is-rounded" src="/assets/img/face.jpg" />
+                </figure>
+                <div className="container"></div>
             </section>
         </main>
     );
