@@ -6,7 +6,7 @@ export const About: FunctionalComponent = () => {
     return (
         <Fragment>
             <Title title="About"></Title>
-            <section className="section tiles">
+            <section className="section">
                 <figure class="image container is-128x128">
                     <img class="is-rounded" src="/assets/img/face.jpg" />
                 </figure>

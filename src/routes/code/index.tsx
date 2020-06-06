@@ -25,7 +25,7 @@ const Code: FunctionalComponent = () => {
     return (
         <Fragment>
             <Title title="Code"></Title>
-            <section className="section tiles">
+            <section className="section">
                 <div className="container">
                     <div className="columns">
                         <div className="column">
