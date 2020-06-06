@@ -42,6 +42,13 @@ const Code: FunctionalComponent = () => {
                                 body="C language subsets compiler"
                             />
                         </div>
+                        <div className="column">
+                            <Content
+                                title="sugawarakensuke.com"
+                                link="https://github.com/kamakuni/sugawarakensuke.com"
+                                body="This site with Preact and Bulma"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
