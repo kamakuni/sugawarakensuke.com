@@ -10,13 +10,11 @@ interface ContentProps {
 
 const Content: FunctionalComponent<ContentProps> = props => {
     return (
-        <div class="container">
-            <a className="title is-size-4 is-spaced" href={props.link}>
-                <h4>{props.title}</h4>
+        <div class="content is-medium">
+            <a className="title is-size-5" href={props.link}>
+                <h5>{props.title}</h5>
             </a>
-            <div className="content">
-                <p>{props.body}</p>
-            </div>
+            <p>{props.body}</p>
         </div>
     );
 };
