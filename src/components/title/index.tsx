@@ -1,6 +1,4 @@
 import { FunctionalComponent, h } from "preact";
-import { useState } from "preact/hooks";
-import { Link } from "preact-router/match";
 import "../../style/style.scss";
 
 interface TitleProps {
