@@ -7,7 +7,7 @@ interface TitleProps {
 
 export const Title: FunctionalComponent<TitleProps> = props => {
     return (
-        <section className="section has-text-centered">
+        <section className="section is-small has-text-centered">
             <p className="is-size-4">{props.title}</p>
         </section>
     );

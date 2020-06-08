@@ -6,9 +6,10 @@ import { Title } from "../../components/title";
 const Home: FunctionalComponent = () => {
     return (
         <Fragment>
+            <Title title="sugawarakensuke.com" />
             <section className="hero">
                 <div className="hero-body is-paddingless">
-                    <AsyncImage src="/assets/img/home.jpg" />
+                    <AsyncImage src="/assets/img/homewoody.jpg" />
                 </div>
             </section>
         </Fragment>
