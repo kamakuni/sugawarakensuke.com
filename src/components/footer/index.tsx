@@ -7,13 +7,13 @@ export const Footer: FunctionalComponent = () => {
             <div className="container">
                 <div class="content has-text-centered">
                     <span class="icon">
-                        <i class="fas twitter"></i>
+                        <i class="fab fa-twitter"></i>
                     </span>
                     <span class="icon">
-                        <i class="fas instagram"></i>
+                        <i class="fab fa-instagram"></i>
                     </span>
                     <span class="icon">
-                        <i class="fas facebook-square"></i>
+                        <i class="fab fa-facebook-square"></i>
                     </span>
                 </div>
             </div>
