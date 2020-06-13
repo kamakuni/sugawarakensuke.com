@@ -3,5 +3,11 @@
 // Customization
 $navbar-item-img-max-height: 2rem;
 $family-sans-serif: '游明朝', YuMincho, 'Hiragino Mincho ProN W3', 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+// Styles for link
+$link: #4a4a4a;
+$link-focus-border: #4a4a4a;
+$link-hover: #4a4a4a;
+$link-visited: #4a4a4a;
 
 @import "~bulma/bulma";
+
