@@ -6,8 +6,10 @@ const Home: FunctionalComponent = () => {
     return (
         <Fragment>
             <section className="hero">
-                <div className="hero-body is-paddingless">
-                    <AsyncImage src="/assets/img/homewoody.jpg" />
+                <div className="hero-body">
+                    <div class="container px-6">
+                        <AsyncImage src="/assets/img/homewoody.jpg" />
+                    </div>
                 </div>
             </section>
         </Fragment>
