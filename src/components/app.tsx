@@ -21,7 +21,7 @@ const App: FunctionalComponent = () => {
     };
 
     return (
-        <div className="has-background-white" id="app">
+        <div id="app">
             <Header />
             <Router onChange={handleRoute}>
                 <Route path="/" component={Home} />
