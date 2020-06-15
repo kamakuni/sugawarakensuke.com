@@ -5,11 +5,13 @@ import { AsyncImage } from "../../components/asyncimage";
 const Home: FunctionalComponent = () => {
     return (
         <Fragment>
-            <section className="hero">
-                <div className="hero-body">
-                    <div class="container px-6">
+            <section className="section">
+                <div class="columns">
+                    <div className="column"></div>
+                    <div className="column is-two-thirds">
                         <AsyncImage src="/assets/img/homewoody.jpg" />
                     </div>
+                    <div className="column"></div>
                 </div>
             </section>
         </Fragment>
