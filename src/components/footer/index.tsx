@@ -9,7 +9,7 @@ interface SnsLinkProps {
 const SnsLink: FunctionalComponent<SnsLinkProps> = props => {
     return (
         <a href={props.href} >
-            <span class="icon">
+            <span class="icon px-3">
                 <i class={`fab ${props.iconClass}`}></i>
             </span>
         </a>
