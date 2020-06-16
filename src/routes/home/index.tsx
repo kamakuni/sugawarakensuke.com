@@ -1,10 +1,12 @@
 import { Fragment, FunctionalComponent, h } from "preact";
 import "../../style/style.scss";
 import { AsyncImage } from "../../components/asyncimage";
+import { Title } from "../../components/title";
 
 const Home: FunctionalComponent = () => {
     return (
         <Fragment>
+            <Title title="Hi, I'm Ken." />
             <section className="hero">
                 <div class="columns">
                     <div className="column"></div>
