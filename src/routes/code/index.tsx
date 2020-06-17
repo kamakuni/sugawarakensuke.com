@@ -34,21 +34,21 @@ const Code: FunctionalComponent = () => {
                             <Content
                                 title="CHIP-8 Emulator"
                                 link="https://github.com/kamakuni/chip8"
-                                body="Virtual machine written in Golang"
+                                body="A virtual machine for CHIP-8 written in Go"
                             />
                         </div>
                         <div className="column">
                             <Content
                                 title="kmcc"
                                 link="https://github.com/kamakuni/kmcc"
-                                body="C language subsets compiler"
+                                body="A compiler for a subset of C"
                             />
                         </div>
                         <div className="column">
                             <Content
                                 title="sugawarakensuke.com"
                                 link="https://github.com/kamakuni/sugawarakensuke.com"
-                                body="This site with Preact and Bulma"
+                                body="This website with Preact and Bulma"
                             />
                         </div>
                     </div>
