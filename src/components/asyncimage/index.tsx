@@ -1,5 +1,6 @@
 import { FunctionalComponent, h } from "preact";
 import { useState, useEffect } from "preact/hooks";
+import classes from "./style.css";
 
 interface AsyncImageProps {
     src: string;
@@ -23,7 +24,13 @@ export const AsyncImage: FunctionalComponent<AsyncImageProps> = props => {
 
     return (
         <figure className="image">
-            {loaded ? <img src={props.src} /> : <div>loading</div>}
+            {!loaded ? (
+                <img src={props.src} />
+            ) : (
+                <div class="container">
+                    <div className={classes.loading}></div>
+                </div>
+            )}
         </figure>
     );
 };
