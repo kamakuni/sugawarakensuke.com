@@ -25,9 +25,9 @@ export const AsyncImage: FunctionalComponent<AsyncImageProps> = props => {
     return (
         <figure className="image">
             {loaded ? (
-                <img style="opacity: 0.0;" src={props.src} />
+                <img src={props.src} />
             ) : (
-                <div class="container has-text-centered">
+                <div className="container has-text-centered">
                     <div className={classes.loading}></div>
                 </div>
             )}
