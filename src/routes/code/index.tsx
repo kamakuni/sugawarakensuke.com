@@ -10,21 +10,24 @@ interface ContentProps {
 
 const Content: FunctionalComponent<ContentProps> = props => {
     return (
-        <div class="card">
-            <div class="card-image">
-                <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
-                </figure>
-            </div>
-            <div class="card-content">
-                <p className="title is-size-5">
-                    <a href={props.link}>{props.title}</a>
-                </p>
-                <div class="content">
-                    <p>{props.body}</p>
+        <a href={props.link}>
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img
+                            src="https://bulma.io/images/placeholders/1280x960.png"
+                            alt="Placeholder image"
+                        />
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <p className="title is-size-5">{props.title}</p>
+                    <div class="content">
+                        <p>{props.body}</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </a>
     );
 };
 
