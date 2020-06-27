@@ -6,6 +6,7 @@ interface ContentProps {
     title: string;
     body: string;
     link: string;
+    image: string;
 }
 
 const Content: FunctionalComponent<ContentProps> = props => {
@@ -14,10 +15,7 @@ const Content: FunctionalComponent<ContentProps> = props => {
             <div class="card">
                 <div class="card-image">
                     <figure class="image is-4by3">
-                        <img
-                            src="https://bulma.io/images/placeholders/1280x960.png"
-                            alt="Placeholder image"
-                        />
+                        <img src={props.image} alt="Placeholder image" />
                     </figure>
                 </div>
                 <div class="card-content">
@@ -43,6 +41,7 @@ const Code: FunctionalComponent = () => {
                                 title="CHIP-8 Emulator"
                                 link="https://github.com/kamakuni/chip8"
                                 body="A virtual machine for CHIP-8 written in Go"
+                                image="/assets/img/code/chip8.jpg"
                             />
                         </div>
                         <div className="column">
@@ -50,6 +49,7 @@ const Code: FunctionalComponent = () => {
                                 title="kmcc"
                                 link="https://github.com/kamakuni/kmcc"
                                 body="A compiler for a subset of C"
+                                image="/assets/img/code/kmcc.jpg"
                             />
                         </div>
                         <div className="column">
@@ -57,6 +57,7 @@ const Code: FunctionalComponent = () => {
                                 title="sugawarakensuke.com"
                                 link="https://github.com/kamakuni/sugawarakensuke.com"
                                 body="This website with Preact and Bulma"
+                                image="/assets/img/code/sugawarakensuke.com.jpg"
                             />
                         </div>
                     </div>
