@@ -14,7 +14,7 @@ const Content: FunctionalComponent<ContentProps> = props => {
         <a href={props.link}>
             <div class="card">
                 <div class="card-image">
-                    <figure class="image is-4by3">
+                    <figure class="image is-2by1">
                         <img src={props.image} alt="Placeholder image" />
                     </figure>
                 </div>
