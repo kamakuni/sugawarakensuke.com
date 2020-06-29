@@ -8,7 +8,7 @@ const Home: FunctionalComponent = () => {
         <Fragment>
             <Title title="Hi, I'm Ken." />
             <section className="hero">
-                <div class="columns">
+                <div class="columns is-gapless">
                     <div className="column"></div>
                     <div className="column is-7 is-12-mobile">
                         <AsyncImage src="/assets/img/homewoody.jpg" />
