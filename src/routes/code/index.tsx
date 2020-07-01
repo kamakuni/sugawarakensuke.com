@@ -38,6 +38,14 @@ const Code: FunctionalComponent = () => {
                     <div className="columns">
                         <div className="column">
                             <Content
+                                title="sugawarakensuke.com"
+                                link="https://github.com/kamakuni/sugawarakensuke.com"
+                                body="This website with Preact and Bulma"
+                                image="/assets/img/code/sugawarakensuke.com.jpg"
+                            />
+                        </div>
+                        <div className="column">
+                            <Content
                                 title="CHIP-8 Emulator"
                                 link="https://github.com/kamakuni/chip8"
                                 body="A virtual machine for CHIP-8 written in Go"
@@ -50,14 +58,6 @@ const Code: FunctionalComponent = () => {
                                 link="https://github.com/kamakuni/kmcc"
                                 body="A compiler for a subset of C"
                                 image="/assets/img/code/kmcc.jpg"
-                            />
-                        </div>
-                        <div className="column">
-                            <Content
-                                title="sugawarakensuke.com"
-                                link="https://github.com/kamakuni/sugawarakensuke.com"
-                                body="This website with Preact and Bulma"
-                                image="/assets/img/code/sugawarakensuke.com.jpg"
                             />
                         </div>
                     </div>
