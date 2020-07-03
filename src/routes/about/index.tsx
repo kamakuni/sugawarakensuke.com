@@ -14,7 +14,10 @@ export const About: FunctionalComponent = () => {
             <section className="section has-text-centered">
                 <div class="content">
                     <h4>Hello, my name is Kensuke Sugawara.</h4>
-                    <p>A software developer in Tokyo. I can speak Japanese 100% fluently.</p>
+                    <p>
+                        A software developer in Tokyo. I can speak Japanese 100%
+                        fluently.
+                    </p>
                 </div>
             </section>
         </Fragment>
