@@ -15,7 +15,7 @@ export const About: FunctionalComponent = () => {
                 <div class="content">
                     <h4>Hello, my name is Kensuke Sugawara.</h4>
                     <p>
-                        A software developer in Tokyo. I can speak Japanese 100%
+                        I'm a software developer in Tokyo. I can speak Japanese 100%
                         fluently.
                     </p>
                 </div>
