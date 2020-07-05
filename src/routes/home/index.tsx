@@ -11,7 +11,7 @@ const Home: FunctionalComponent = () => {
                 <div class="columns is-gapless">
                     <div className="column"></div>
                     <div className="column is-7 is-12-mobile">
-                        <AsyncImage src="/assets/img/homewoody.jpg" />
+                        <AsyncImage src="/assets/img/home.jpg" />
                     </div>
                     <div className="column"></div>
                 </div>
