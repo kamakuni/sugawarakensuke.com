@@ -1,11 +1,3 @@
-/*import { Component, h } from "preact";
-//import Link from "preact-router/match";
+import { h } from "preact";
 import { Header } from "../components/header";
-
-describe("Initial Test of the Header", () => {
-    test("Header renders 3 nav items", () => {
-        const context = shallow(<Header />);
-        expect(context.find("Link").length).toBe(3);
-    });
-});
-*/
+import { shallow } from "enzyme";
