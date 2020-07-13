@@ -17,6 +17,11 @@
   "eslintIgnore": [
     "build/*"
   ],
+  "jest": {
+    "setupFiles": [
+      "./setup.ts"
+    ]
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "preact": "^10.4.5",
