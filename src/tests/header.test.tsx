@@ -1,4 +1,3 @@
-import { expect } from "chai";
 import { h } from "preact";
 import { Header } from "../components/header";
 import { mount } from "enzyme";
