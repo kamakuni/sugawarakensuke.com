@@ -4,7 +4,7 @@ module.exports = {
     },
     verbose: true,
     setupFiles: [
-        "<rootDir>/src/tests/__mocks__/browserMocks.js"
+        "<rootDir>/src/tests/setup.ts"
     ],
     testURL: "http://localhost:8080",
     moduleFileExtensions: [
