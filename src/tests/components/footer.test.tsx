@@ -1,5 +1,5 @@
 import { h } from "preact";
-import { Footer } from "../components/footer";
+import { Footer } from "../../components/footer";
 import { mount } from "enzyme";
 
 describe("Initial Test of Footer", () => {

@@ -1,5 +1,5 @@
 import { h } from "preact";
-import { Title } from "../components/title";
+import { Title } from "../../components/title";
 import { mount } from "enzyme";
 
 describe("Initial Test of Title", () => {
