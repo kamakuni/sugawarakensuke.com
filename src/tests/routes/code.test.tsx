@@ -1,5 +1,5 @@
 import { h } from "preact";
-import { Code } from "../../routes/code";
+import Code from "../../routes/code";
 import { mount } from "enzyme";
 
 describe("Initial Test of Code", () => {

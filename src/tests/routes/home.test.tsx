@@ -1,5 +1,5 @@
 import { h } from "preact";
-import { Home } from "../../routes/home";
+import Home from "../../routes/home";
 import { mount } from "enzyme";
 
 describe("Initial Test of Home", () => {

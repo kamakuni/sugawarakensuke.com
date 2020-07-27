@@ -1,5 +1,5 @@
 import { h } from "preact";
-import { NotFound } from "../../routes/notfound";
+import NotFound from "../../routes/notfound";
 import { mount } from "enzyme";
 
 describe("Initial Test of NotFound", () => {
