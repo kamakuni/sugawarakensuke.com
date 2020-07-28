@@ -3,8 +3,8 @@ import Home from "../../routes/home";
 import { mount } from "enzyme";
 
 describe("Initial Test of Home", () => {
-    it("should render a image", () => {
+    it("should render a AsyncImage", () => {
         const context = mount(<Home />);
-        expect(context.find("img").length).toBe(1);
+        expect(context.find("AsyncImage").length).toBe(1);
     });
 });
