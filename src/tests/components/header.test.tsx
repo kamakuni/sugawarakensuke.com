@@ -9,7 +9,6 @@ describe("Initial Test of Header", () => {
     });
     it("should be active", () => {
         const context = mount(<Header />);
-        console.log(context.instance().state);
         //expect(context.instance().state("isActive")).toBe(true);
     });
 });
