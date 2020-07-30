@@ -7,8 +7,4 @@ describe("Initial Test of Header", () => {
         const context = mount(<Header />);
         expect(context.find("Link").length).toBe(3);
     });
-    it("should be active", () => {
-        const context = mount(<Header />);
-        //expect(context.instance().state("isActive")).toBe(true);
-    });
 });
