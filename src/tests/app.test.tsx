@@ -8,4 +8,8 @@ describe("Initial Test of App", () => {
         const context = mount(<App />);
         expect(context.find(Header).length).toBe(1);
     });
+    it("should have Footer", () => {
+        const context = mount(<App />);
+        expect(context.find(Header).length).toBe(1);
+    });
 });
