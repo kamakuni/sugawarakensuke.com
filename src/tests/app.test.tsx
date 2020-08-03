@@ -1,6 +1,7 @@
 import { h } from "preact";
 import App from "../components/app";
 import { Header } from "../components/header";
+import { Footer } from "../components/footer";
 import { mount } from "enzyme";
 
 describe("Initial Test of App", () => {
@@ -10,6 +11,6 @@ describe("Initial Test of App", () => {
     });
     it("should have Footer", () => {
         const context = mount(<App />);
-        expect(context.find(Header).length).toBe(1);
+        expect(context.find(Footer).length).toBe(1);
     });
 });
