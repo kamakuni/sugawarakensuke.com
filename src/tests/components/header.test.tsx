@@ -13,4 +13,16 @@ describe("Initial Test of Header", () => {
         const context = mount(<Header />);
         expect(context.find("Link").length).toBe(3);
     });
+    it("should render Link for /", () => {
+        const context = mount(<Header />);
+        expect(context.find('Link[href="/"]').text()).toEqual("Home");
+    });
+    it("should render Link for /code", () => {
+        const context = mount(<Header />);
+        expect(context.find('Link[href="/code"]').text()).toEqual("Code");
+    });
+    it("should render Link for /about", () => {
+        const context = mount(<Header />);
+        expect(context.find('Link[href="/about"]').text()).toEqual("About");
+    });
 });
