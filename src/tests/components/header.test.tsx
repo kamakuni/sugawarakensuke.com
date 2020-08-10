@@ -25,4 +25,8 @@ describe("Initial Test of Header", () => {
         const context = mount(<Header />);
         expect(context.find('Link[href="/about"]').text()).toEqual("About");
     });
+    it("should render a burger menu", () => {
+        const context = mount(<Header />);
+        expect(context.find("a.navbar-burger").exists()).toBeTruthy();
+    });
 });
