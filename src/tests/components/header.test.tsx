@@ -29,4 +29,11 @@ describe("Initial Test of Header", () => {
         const context = mount(<Header />);
         expect(context.find("a.navbar-burger").exists()).toBeTruthy();
     });
+   it("should not be active", () => {
+        const context = mount(<Header />);
+        expect(
+            context.find("a.navbar-burger").hasClass("is-active")
+        ).toBeFalsy();
+        //expect()
+   });
 });
