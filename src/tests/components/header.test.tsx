@@ -35,4 +35,11 @@ describe("Initial Test of Header", () => {
             context.find("a.navbar-burger").hasClass("is-active")
         ).toBeFalsy();
     });
+    it("should be active after clicking the burger menu", () => {
+        const context = mount(<Header />);
+        context.find("a.navbar-burger").simulate("click");
+        expect(
+            context.find("a.navbar-burger").hasClass("is-active")
+        ).toBeTruthy();
+    });
 });
