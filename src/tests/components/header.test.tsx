@@ -42,4 +42,12 @@ describe("Initial Test of Header", () => {
             context.find("a.navbar-burger").hasClass("is-active")
         ).toBeTruthy();
     });
+    it("should be inactive after clicking the Link to the home page", () => {
+        const context = mount(<Header />);
+        context.find("a.navbar-burger").simulate("click");
+        context.find('.navbar-end a[href="/"]').simulate("click");
+        expect(
+            context.find("a.navbar-burger").hasClass("is-active")
+        ).toBeFalsy();
+    });
 });
