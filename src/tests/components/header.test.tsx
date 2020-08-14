@@ -50,4 +50,21 @@ describe("Initial Test of Header", () => {
             context.find("a.navbar-burger").hasClass("is-active")
         ).toBeFalsy();
     });
+    it("should be inactive after clicking the Link to the code page", () => {
+        const context = mount(<Header />);
+        context.find("a.navbar-burger").simulate("click");
+        context.find('.navbar-end a[href="/code"]').simulate("click");
+        expect(
+            context.find("a.navbar-burger").hasClass("is-active")
+        ).toBeFalsy();
+    });
+    it("should be inactive after clicking the Link to the about page", () => {
+        const context = mount(<Header />);
+        context.find("a.navbar-burger").simulate("click");
+        context.find('.navbar-end a[href="/about"]').simulate("click");
+        expect(
+            context.find("a.navbar-burger").hasClass("is-active")
+        ).toBeFalsy();
+    });
+
 });
