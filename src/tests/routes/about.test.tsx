@@ -4,7 +4,7 @@ import { Title } from "../../components/title";
 import { mount } from "enzyme";
 
 describe("Initial Test of About", () => {
-    it("should render an Title", () => {
+    it("should render a Title", () => {
         const context = mount(<About />);
         expect(context.find(Title).length).toBe(1);
     });
