@@ -8,6 +8,11 @@ describe("Initial Test of Code", () => {
         const context = mount(<Code />);
         expect(context.find(Title).length).toBe(1);
     });
+    it("should render a Title With a Code text", () => {
+        const context = mount(<Code />);
+        const title = context.find(Title);
+        expect(title.find("p").text()).toBe("Code");
+    });
     it("should render 3 images", () => {
         const context = mount(<Code />);
         expect(context.find("img").length).toBe(3);
