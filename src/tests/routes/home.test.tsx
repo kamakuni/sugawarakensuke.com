@@ -9,6 +9,11 @@ describe("Initial Test of Home", () => {
         const context = mount(<Home />);
         expect(context.find(Title).length).toBe(1);
     });
+    it("should render a Title With a Home text", () => {
+        const context = mount(<Home />);
+        const title = context.find(Title);
+        expect(title.find("p").text()).toBe("Hi, I'm Ken.");
+    });
     it("should render a AsyncImage", () => {
         const context = mount(<Home />);
         expect(context.find(AsyncImage).length).toBe(1);
