@@ -8,7 +8,7 @@ describe("Initial Test of About", () => {
         const context = mount(<About />);
         expect(context.find(Title).length).toBe(1);
     });
-    it("should render a Title", () => {
+    it("should render a Title With a About text", () => {
         const context = mount(<About />);
         const title = context.find(Title);
         expect(title.find("p").text()).toBe("About");
