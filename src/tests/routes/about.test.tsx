@@ -17,4 +17,8 @@ describe("Initial Test of About", () => {
         const context = mount(<About />);
         expect(context.find("img").length).toBe(1);
     });
+    it("should have a content", () => {
+        const context = mount(<About />);
+        expect(context.find(".content").length).toBe(1);
+    });
 });
