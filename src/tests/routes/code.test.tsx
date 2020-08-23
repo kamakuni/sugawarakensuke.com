@@ -13,6 +13,10 @@ describe("Initial Test of Code", () => {
         const title = context.find(Title);
         expect(title.find("p").text()).toBe("Code");
     });
+    it("should render 3 links", () => {
+        const context = mount(<Code />);
+        expect(context.find("a").length).toBe(3);
+    });
     it("should render 3 images", () => {
         const context = mount(<Code />);
         expect(context.find("img").length).toBe(3);
