@@ -21,4 +21,8 @@ describe("Initial Test of Code", () => {
         const context = mount(<Code />);
         expect(context.find("img").length).toBe(3);
     });
+    it("should render 3 contents", () => {
+        const context = mount(<Code />);
+        expect(context.find(".content").length).toBe(3);
+    });
 });
