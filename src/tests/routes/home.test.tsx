@@ -14,6 +14,10 @@ describe("Initial Test of Home", () => {
         const title = context.find(Title);
         expect(title.find("p").text()).toBe("Hi, I'm Ken.");
     });
+    it("should render 3 columns", () => {
+        const context = mount(<Home />);
+        expect(context.find(".column").length).toBe(3);
+    });
     it("should render a AsyncImage", () => {
         const context = mount(<Home />);
         expect(context.find(AsyncImage).length).toBe(1);
