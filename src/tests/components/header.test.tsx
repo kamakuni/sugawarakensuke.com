@@ -2,7 +2,7 @@ import { h } from "preact";
 import { Header } from "../../components/header";
 import { mount } from "enzyme";
 
-describe("Initial Test of Header", () => {
+describe("Testing for Header component", () => {
     it("should render an icon image", () => {
         const context = mount(<Header />);
         expect(context.find("img.is-rounded").prop("src")).toBe(

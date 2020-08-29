@@ -3,7 +3,7 @@ import { About } from "../../routes/about";
 import { Title } from "../../components/title";
 import { mount } from "enzyme";
 
-describe("Initial Test of About", () => {
+describe("Testing for About component", () => {
     it("should render a Title", () => {
         const context = mount(<About />);
         expect(context.find(Title).length).toBe(1);
