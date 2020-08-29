@@ -5,7 +5,7 @@ import { Router } from "preact-router";
 import { Footer } from "../components/footer";
 import { mount } from "enzyme";
 
-describe("Initial Test of App", () => {
+describe("Testing for App component", () => {
     it("should have a Header", () => {
         const context = mount(<App />);
         expect(context.find(Header).length).toBe(1);
