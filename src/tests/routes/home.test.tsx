@@ -9,7 +9,7 @@ describe("Testing for Home component", () => {
         const context = mount(<Home />);
         expect(context.find(Title).length).toBe(1);
     });
-    it("should render a Title With a Home text", () => {
+    it("should render a Title with a Home text", () => {
         const context = mount(<Home />);
         const title = context.find(Title);
         expect(title.find("p").text()).toBe("Hi, I'm Ken.");

@@ -8,7 +8,7 @@ describe("Testing for Code component", () => {
         const context = mount(<Code />);
         expect(context.find(Title).length).toBe(1);
     });
-    it("should render a Title With a Code text", () => {
+    it("should render a Title with a Code text", () => {
         const context = mount(<Code />);
         const title = context.find(Title);
         expect(title.find("p").text()).toBe("Code");
