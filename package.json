@@ -45,7 +45,7 @@
     "jest": "^25.1.0",
     "jest-preset-preact": "^4.0.0",
     "lint-staged": "^10.0.7",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "preact-cli": "^3.0.0-next.19",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
